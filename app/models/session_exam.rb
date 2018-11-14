@@ -1,0 +1,2 @@
+class SessionExam < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class UserExam < ApplicationRecord
+end

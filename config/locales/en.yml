@@ -1,0 +1,45 @@
+en:
+  user:
+    new:
+      Register: "Register"
+      Confirm_your_Password: "Confirm your Password"
+      Enter_your_Password: "Enter your Password"
+      Enter_your_Username: "Enter your Username"
+      Enter_your_Email: "Enter your Email"
+      Student: "Student"
+      Your_Email: "Your Email"
+      Login: "Login"
+      sign_up: "Sign Up"
+  user_controller:
+    Sign_Up_Success: "Sign Up Success"
+    registration_failed: "registration failed"
+  layouts:
+    application:
+      Quiz_Test_Project: "Quiz Test Project"
+  session:
+    new:
+      log_in: "log in"
+      login_Form: "login Form"
+      Admin_Login: "Admin Login"
+      Please: "Please enter your user name and password"
+      Forgot_password?: "Forgot password ?"
+      Designed_by: "Designed by XUAN TUAN & TIEN THANH"
+      password: "Password"
+      newuser: "New user?"
+      language: "Language :"
+      Username: "Username"
+      Password: "Password"
+      OR: " OR  "
+    user:
+      Confirm_your_Password: "Confirm your Password"
+      Enter_your_Password: "Enter your Password"
+      Enter_your_Username: "Enter your Username"
+      Enter_your_Email: "Enter your Email"
+      Student: "Student"
+      Your_Email: "Your Email"
+      Username: "Username"
+      Password: "Password"
+      Login: "Login"
+    create:
+      invalid: "invalid"
+
