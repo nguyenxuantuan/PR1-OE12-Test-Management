@@ -18,6 +18,8 @@ vi:
     Sign_Up_Success: "Đăng ký thành công"
     registration_failed: "Đăng ký thất bại"
   layouts:
+    application:
+      Quiz_Test_Project: "Dự án bài thi trắc nghiệm online"
   session:
     new:
       log_in: "Đăng nhập"
@@ -28,6 +30,7 @@ vi:
       Designed_by: "Thiết kế bởi XUÂN TUẤN & TIẾN THÀNH"
       password: "Mật khẩu"
       newuser: "Người dùng mới?"
+      language: " Ngôn ngữ :"
     user:
       Confirm_your_Password: "Nhập lại mật khẩu"
       Enter_your_Password: "Nhập mật khẩu"

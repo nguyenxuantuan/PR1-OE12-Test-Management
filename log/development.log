@@ -3732,3 +3732,616 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+<<<<<<< HEAD
+=======
+Started GET "/session/new?locale=vi" for 127.0.0.1 at 2018-11-26 11:22:09 +0700
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionController#new as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (28.8ms)
+Completed 200 OK in 225ms (Views: 213.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/session/new?locale=vi" for 127.0.0.1 at 2018-11-26 11:22:44 +0700
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by SessionController#new as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 44ms (Views: 41.7ms | ActiveRecord: 0.0ms)
+
+
+>>>>>>> init project
+Started GET "/" for 127.0.0.1 at 2018-11-27 00:36:06 +0700
+  [1m[35m (25.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (12.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/mac/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/mac/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb (3.4ms)
+Completed 200 OK in 23ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login?locale=en" for 127.0.0.1 at 2018-11-27 00:36:14 +0700
+Processing by SessionController#new as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (48.6ms)
+Completed 200 OK in 251ms (Views: 248.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/new" for 127.0.0.1 at 2018-11-27 00:36:22 +0700
+Processing by UserController#new as HTML
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant User::Settings):
+  
+app/models/user.rb:4:in `<class:User>'
+app/models/user.rb:1:in `<top (required)>'
+app/controllers/user_controller.rb:3:in `new'
+Started GET "/user/new" for 127.0.0.1 at 2018-11-27 00:44:45 +0700
+Processing by UserController#new as HTML
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant User::Settings):
+  
+app/models/user.rb:4:in `<class:User>'
+app/models/user.rb:1:in `<top (required)>'
+app/controllers/user_controller.rb:3:in `new'
+Started GET "/user/new" for 127.0.0.1 at 2018-11-27 00:46:39 +0700
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by UserController#new as HTML
+  Rendering user/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered user/new.html.erb within layouts/application (43.1ms)
+Completed 200 OK in 321ms (Views: 256.2ms | ActiveRecord: 42.8ms)
+
+
+Started GET "/login?locale=en" for 127.0.0.1 at 2018-11-28 13:36:02 +0700
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionController#new as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 227ms (Views: 217.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/session/new?locale=vi" for 127.0.0.1 at 2018-11-28 13:36:05 +0700
+Processing by SessionController#new as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 65ms (Views: 57.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/session/new?locale=vi" for 127.0.0.1 at 2018-11-28 13:36:19 +0700
+Processing by SessionController#new as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 50ms (Views: 41.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/session/new?locale=vi" for 127.0.0.1 at 2018-11-28 13:36:23 +0700
+Processing by SessionController#new as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 57ms (Views: 48.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/session/new?locale=en" for 127.0.0.1 at 2018-11-28 13:36:25 +0700
+Processing by SessionController#new as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 53ms (Views: 47.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/session/new?locale=vi" for 127.0.0.1 at 2018-11-28 13:36:39 +0700
+Processing by SessionController#new as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 81ms (Views: 71.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/session/new?locale=vi" for 127.0.0.1 at 2018-11-28 13:44:57 +0700
+Processing by SessionController#new as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 42ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/session/new?locale=vi" for 127.0.0.1 at 2018-11-28 13:45:45 +0700
+Processing by SessionController#new as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 41ms (Views: 37.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/session/new?locale=vi" for 127.0.0.1 at 2018-11-28 13:46:02 +0700
+Processing by SessionController#new as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 26ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/session/new?locale=vi" for 127.0.0.1 at 2018-11-28 13:46:10 +0700
+Processing by SessionController#new as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 43ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/session/new?locale=en" for 127.0.0.1 at 2018-11-28 13:46:15 +0700
+Processing by SessionController#new as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 43ms (Views: 38.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/session/new?locale=en" for 127.0.0.1 at 2018-11-28 13:46:53 +0700
+Processing by SessionController#new as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 37ms (Views: 31.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user/new" for 127.0.0.1 at 2018-11-29 08:05:10 +0700
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (20.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by UserController#new as HTML
+  Rendering user/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered user/new.html.erb within layouts/application (39.9ms)
+Completed 200 OK in 338ms (Views: 283.8ms | ActiveRecord: 34.0ms)
+
+
+Started POST "/signup" for 127.0.0.1 at 2018-11-29 08:05:35 +0700
+Processing by UserController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HGDCHEW0YSHVa4Tdv4whmZ/XN1q0PkTnUqq8zfJuhF9h5/6r4Nad4j3QGZMQcO/qZXr75vnj62ZzXy4aCX5WeA==", "user"=>{"email"=>"truongquynh235@gmail.com", "user_name"=>"tuanquynh96", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Unpermitted parameters: :user_name, :password_confirmation
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'truongquynh235@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  Rendering user/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.4ms)
+  Rendered user/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 47ms (Views: 37.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/login?locale=en" for 127.0.0.1 at 2018-11-29 08:06:07 +0700
+Processing by SessionController#new as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 32ms (Views: 26.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login?locale=en" for 127.0.0.1 at 2018-11-29 08:13:50 +0700
+Started GET "/signup" for 127.0.0.1 at 2018-11-29 08:14:00 +0700
+Processing by SessionController#new as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 25ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+Processing by UserController#new as HTML
+  Rendering user/new.html.erb within layouts/application
+  Rendered user/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 104ms (Views: 41.6ms | ActiveRecord: 31.2ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2018-11-29 08:14:05 +0700
+Processing by UserController#new as HTML
+  Rendering user/new.html.erb within layouts/application
+  Rendered user/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 37ms (Views: 31.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signup" for 127.0.0.1 at 2018-11-29 08:14:25 +0700
+Processing by UserController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zsaqs97mkMVlMvwL2vJekJ0DPYBwgsCBGy6sOYlFkoyBcu+9/+ZehehU6tcjdKVJ8CK6EswFnhALhw/HacCtUA==", "user"=>{"email"=>"nxtuan1234@gmail.com", "user_name"=>"tuan1996", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Unpermitted parameters: :user_name, :password_confirmation
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'nxtuan1234@gmail.com' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  Rendering user/new.html.erb within layouts/application
+  Rendered user/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 37ms (Views: 26.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/signup?locale=vi" for 127.0.0.1 at 2018-11-29 08:17:28 +0700
+Processing by UserController#new as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering user/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered user/new.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 53ms (Views: 46.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup?locale=en" for 127.0.0.1 at 2018-11-29 08:17:34 +0700
+Processing by UserController#new as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering user/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered user/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 38ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup?locale=vi" for 127.0.0.1 at 2018-11-29 08:17:41 +0700
+Processing by UserController#new as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering user/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.8ms)
+  Rendered user/new.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 54ms (Views: 47.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup?locale=vi" for 127.0.0.1 at 2018-11-29 08:17:42 +0700
+Processing by UserController#new as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering user/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.8ms)
+  Rendered user/new.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 71ms (Views: 64.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup?locale=vi" for 127.0.0.1 at 2018-11-29 08:17:42 +0700
+Processing by UserController#new as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering user/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered user/new.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 55ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup?locale=en" for 127.0.0.1 at 2018-11-29 08:17:48 +0700
+Processing by UserController#new as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering user/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.7ms)
+  Rendered user/new.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 52ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup?locale=vi" for 127.0.0.1 at 2018-11-29 08:17:52 +0700
+Processing by UserController#new as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering user/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.7ms)
+  Rendered user/new.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 55ms (Views: 48.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signup" for 127.0.0.1 at 2018-11-29 08:18:06 +0700
+Processing by UserController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Gpp5zrRSoHMaBJb6ogLTXIxa5UWvCZUDiJNy8iTOaRNVLjzAlVJuM5digCZbhCiF4Xti1xOOy5KYOtEMxEtWzw==", "user"=>{"email"=>"nxtuan1234@gmail.com", "user_name"=>"tuan1234", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Đăng ký"}
+Unpermitted parameters: :user_name, :password_confirmation
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'nxtuan1234@gmail.com' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  Rendering user/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (2.1ms)
+  Rendered user/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 44ms (Views: 32.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/signup?locale=vi" for 127.0.0.1 at 2018-11-29 08:18:11 +0700
+Processing by UserController#new as HTML
+  Parameters: {"locale"=>"vi"}
+  Rendering user/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered user/new.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 46ms (Views: 35.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup?locale=en" for 127.0.0.1 at 2018-11-29 08:18:13 +0700
+Processing by UserController#new as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering user/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered user/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 39ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signup" for 127.0.0.1 at 2018-11-29 08:20:12 +0700
+Processing by UserController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9RL1czaYPmWXYaGLX4lQ+KQicn3mey3fVyg5ry/r45u6prB9F5jwJRoHt1emD6shyQP171r8c05HgZpRz27cRw==", "user"=>{"email"=>"nxtuan1234@gmail.com", "user_name"=>"tuan1234", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Unpermitted parameters: :user_name, :password_confirmation
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'nxtuan1234@gmail.com' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  Rendering user/new.html.erb within layouts/application
+  Rendered user/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 38ms (Views: 29.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/signup?locale=en" for 127.0.0.1 at 2018-11-29 08:20:17 +0700
+Processing by UserController#new as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering user/new.html.erb within layouts/application
+  Rendered user/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 37ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup?locale=en" for 127.0.0.1 at 2018-11-29 08:52:34 +0700
+Processing by UserController#new as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering user/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered user/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 45ms (Views: 23.2ms | ActiveRecord: 10.6ms)
+
+
+Started POST "/signup" for 127.0.0.1 at 2018-11-29 08:53:27 +0700
+Processing by UserController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cr7oXGMATRArfnWC2Pwfsj6pB31qJ34LkYOItpjQyvJFCq1SQgCDUKYYY14heuRrU4iA79agIJqBKitIeFX1Lg==", "user"=>{"email"=>"nxtuan1234@gmail.com", "user_name"=>"abc", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'password_confirmation' for User.):
+  
+app/controllers/user_controller.rb:7:in `create'
+Started POST "/signup" for 127.0.0.1 at 2018-11-29 08:54:10 +0700
+Processing by UserController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cr7oXGMATRArfnWC2Pwfsj6pB31qJ34LkYOItpjQyvJFCq1SQgCDUKYYY14heuRrU4iA79agIJqBKitIeFX1Lg==", "user"=>{"email"=>"nxtuan1234@gmail.com", "user_name"=>"abc", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Unpermitted parameter: :password_confirmation
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'nxtuan1234@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  Rendering user/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.1ms)
+  Rendered user/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 52ms (Views: 36.6ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/signup" for 127.0.0.1 at 2018-11-29 08:54:50 +0700
+Processing by UserController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+TVY4SCLETSmY2VvxP3Yrk4y4x56oqKiz5rJRLZkM6qEsmRWhent907Y+CFrARbdtJ8vojd/DSPub1uTTXThjQ==", "user"=>{"email"=>"ac@gmail.com", "user_name"=>"abc", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Unpermitted parameter: :password_confirmation
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'ac@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (6.4ms)[0m  [1m[32mINSERT INTO `users` (`user_name`, `email`, `password`, `created_at`, `updated_at`) VALUES ('abc', 'ac@gmail.com', '123456', '2018-11-29 01:54:50', '2018-11-29 01:54:50')[0m
+  [1m[35m (24.7ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 128ms (ActiveRecord: 32.6ms)
+
+
+  
+NoMethodError (undefined method `log_in' for #<UserController:0x00007fe10cab9600>
+Did you mean?  login_url):
+  
+app/controllers/user_controller.rb:9:in `create'
+Started POST "/signup" for 127.0.0.1 at 2018-11-29 08:57:03 +0700
+Processing by UserController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+TVY4SCLETSmY2VvxP3Yrk4y4x56oqKiz5rJRLZkM6qEsmRWhent907Y+CFrARbdtJ8vojd/DSPub1uTTXThjQ==", "user"=>{"email"=>"ac@gmail.com", "user_name"=>"abc", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Unpermitted parameter: :password_confirmation
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'ac@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  Rendering user/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (2.4ms)
+  Rendered user/new.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 63ms (Views: 36.4ms | ActiveRecord: 12.8ms)
+
+
+Started POST "/signup" for 127.0.0.1 at 2018-11-29 08:57:20 +0700
+Processing by UserController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dljsaFkuTrLRgSC4o5B2Teh7YtwSsxtQZC3HWNwAk1wL39Df/EyycTk6vfYMbLg+EtauYF9utNFF2FWPJxBBew==", "user"=>{"email"=>"acd@gmail.com", "user_name"=>"abc", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Unpermitted parameter: :password_confirmation
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'acd@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO `users` (`user_name`, `email`, `password`, `created_at`, `updated_at`) VALUES ('abc', 'acd@gmail.com', '123456', '2018-11-29 01:57:20', '2018-11-29 01:57:20')[0m
+  [1m[35m (129.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 236ms (ActiveRecord: 132.2ms)
+
+
+  
+NoMethodError (undefined method `log_in' for #<UserController:0x00007fe11309a960>
+Did you mean?  login_url):
+  
+app/controllers/user_controller.rb:9:in `create'
+Started GET "/signup" for 127.0.0.1 at 2018-11-29 11:54:39 +0700
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (21.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by UserController#new as HTML
+  Rendering user/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered user/new.html.erb within layouts/application (44.9ms)
+Completed 200 OK in 375ms (Views: 319.8ms | ActiveRecord: 35.5ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`id` DESC LIMIT 1[0m
+Started POST "/signup" for 127.0.0.1 at 2018-11-29 11:58:27 +0700
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by UserController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MfB/OQEiDO+7V6Km37rYkiU8VIfsnzWY7DE+z9gUO01Md0OOpEDwLFPsP+hwRhbh35GYO6FCmhnNxKwYIwTpag==", "user"=>{"email"=>"tien@gmail.com", "user_name"=>"tiendq", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Unpermitted parameter: :password_confirmation
+Started POST "/signup" for 127.0.0.1 at 2018-11-29 12:01:20 +0700
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by UserController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MfB/OQEiDO+7V6Km37rYkiU8VIfsnzWY7DE+z9gUO01Md0OOpEDwLFPsP+hwRhbh35GYO6FCmhnNxKwYIwTpag==", "user"=>{"email"=>"tien@gmail.com", "user_name"=>"tiendq", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Unpermitted parameter: :password_confirmation
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'tien@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (6.4ms)[0m  [1m[32mINSERT INTO `users` (`user_name`, `email`, `password`, `created_at`, `updated_at`) VALUES ('tiendq', 'tien@gmail.com', '123456', '2018-11-29 05:01:38', '2018-11-29 05:01:38')[0m
+  [1m[35m (61.7ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 17907ms (ActiveRecord: 80.2ms)
+
+
+  
+NoMethodError (undefined method `log_in' for #<UserController:0x00007fead642a748>
+Did you mean?  login_url):
+  
+app/controllers/user_controller.rb:10:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`id` DESC LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`id` DESC LIMIT 1[0m
+  [1m[35mSQL (142.1ms)[0m  [1m[31mDELETE FROM `users` WHERE `users`.`id` = 5[0m
+Started POST "/signup" for 127.0.0.1 at 2018-11-29 12:05:59 +0700
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by UserController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MfB/OQEiDO+7V6Km37rYkiU8VIfsnzWY7DE+z9gUO01Md0OOpEDwLFPsP+hwRhbh35GYO6FCmhnNxKwYIwTpag==", "user"=>{"email"=>"tien@gmail.com", "user_name"=>"tiendq", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Unpermitted parameter: :password_confirmation
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'tien@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `users` (`user_name`, `email`, `password`, `created_at`, `updated_at`) VALUES ('tiendq', 'tien@gmail.com', '123456', '2018-11-29 05:06:20', '2018-11-29 05:06:20')[0m
+  [1m[35m (152.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/user/6
+Completed 302 Found in 10709ms (ActiveRecord: 153.3ms)
+
+
+Started GET "/user/6" for 127.0.0.1 at 2018-11-29 12:06:20 +0700
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for UserController):
+  
+actionpack (5.1.6) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.6) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`id` DESC LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`id` DESC LIMIT 1[0m
+  [1m[35mSQL (58.4ms)[0m  [1m[31mDELETE FROM `users` WHERE `users`.`id` = 6[0m
+Started GET "/login?locale=en" for 127.0.0.1 at 2018-11-29 12:07:38 +0700
+Processing by SessionController#new as HTML
+  Parameters: {"locale"=>"en"}
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (24.2ms)
+Completed 200 OK in 216ms (Views: 211.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-11-29 12:07:44 +0700
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (29.9ms)
+Completed 200 OK in 63ms (Views: 56.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2018-11-29 12:18:23 +0700
+Processing by UserController#new as HTML
+  Rendering user/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered user/new.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 62ms (Views: 42.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2018-11-29 12:18:28 +0700
+Processing by UserController#new as HTML
+  Rendering user/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered user/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 33ms (Views: 29.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signup" for 127.0.0.1 at 2018-11-29 12:18:29 +0700
+Processing by UserController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vlYkjtEmQARM0MraqGPAxVRPLWaBb9JY/75CyaXWUJPD0Rg5dES8x6RrV5QHnw62ruLh2syyfdneS9AeXsaCtA==", "user"=>{"email"=>"", "user_name"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Redirected to http://localhost:3000/login
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-11-29 12:18:29 +0700
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 24ms (Views: 21.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2018-11-29 12:31:25 +0700
+Processing by UserController#new as HTML
+  Rendering user/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (5.7ms)
+  Rendered user/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 42ms (Views: 31.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2018-11-29 12:31:29 +0700
+Processing by UserController#new as HTML
+  Rendering user/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered user/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 29ms (Views: 24.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signup" for 127.0.0.1 at 2018-11-29 12:31:46 +0700
+Processing by UserController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"patlP3dqNlQ1QZYtBSihzIql/gOKrFxOjWAx+EQpUHbYLFmI0gjKl936C2Oq1G+/cAgyv8dx88+slaMvvzmCUQ==", "user"=>{"email"=>"tiendq@gmail.com", "user_name"=>"tiendq", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Register"}
+Unpermitted parameter: :password_confirmation
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'tiendq@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO `users` (`user_name`, `email`, `password`, `created_at`, `updated_at`) VALUES ('tiendq', 'tiendq@gmail.com', '123456', '2018-11-29 05:31:46', '2018-11-29 05:31:46')[0m
+  [1m[35m (134.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/login
+Completed 302 Found in 147ms (ActiveRecord: 136.9ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-11-29 12:31:47 +0700
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 26ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+

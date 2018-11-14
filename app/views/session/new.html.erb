@@ -1,5 +1,3 @@
-<%= link_to t(".english"), locale: "en" %>
-<%= link_to t(".vietnam"), locale: "vi" %>
 <div id="LoginForm">
   <div class="container">
     <h1 class="form-heading"><%= t ".login_Form" %></h1>
@@ -25,6 +23,7 @@
         <% end %>
         </div>
         <p> <%= t ".newuser" %> <%= link_to t(".signup"), signup_path %></p>
+        <p><%= t ".language" %><%= link_to t(" .english "), locale: "en" %><%= link_to t(" .vietnam  "), locale: "vi" %></p>
         <p class="botto-text"> <%= t ".Designed_by" %></p>
       </div>
     </div>

@@ -28,6 +28,7 @@ en:
       Designed_by: "Designed by XUAN TUAN & TIEN THANH"
       password: "Password"
       newuser: "New user?"
+      language: " Language :"
     user:
       Confirm_your_Password: "Confirm your Password"
       Enter_your_Password: "Enter your Password"
