@@ -15,6 +15,10 @@ gem "turbolinks", "~> 5"
 gem "jbuilder", "~> 2.5"
 gem "rails-i18n"
 gem "config"
+gem "faker"
+gem "will_paginate"
+gem "bootstrap-will_paginate"
+gem "i18n-js"
 
 group :development, :test do
   gem "capybara", "~> 2.13"

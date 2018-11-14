@@ -1,34 +1,54 @@
 en:
-  user:
-    new:
-      Register: "Register"
-      Confirm_your_Password: "Confirm your Password"
-      Enter_your_Password: "Enter your Password"
-      Enter_your_Username: "Enter your Username"
-      Enter_your_Email: "Enter your Email"
-      Student: "Student"
-      Your_Email: "Your Email"
-      Username: "Username"
-      Password: "Password"
-      Login: "Login"
-      sign_up: "Sign Up"
+  application_controller:
+    Quiz_Test_Project: "Quiz_Test_Project"
   user_controller:
     Sign_Up_Success: "Sign Up Success"
     registration_failed: "registration failed"
   layouts:
     application:
-      Quiz_Test_Project: "Quiz Test Project"
+      Quiz_Test_Project: "App Quiz Test Project"
+    header:
+      quiz: "Online Quiz"
+      home: "Home"
+      help: "Help"
+      login: "Log in"
+      user: "Users"
+      log: "Log out"
+      account: "Account"
+      profile: "Profile"
+      setting: "Settings"
+      about: "About"
+      contact: "Contact"
+    footer:
+      Languages: "Languages"
+      En: "English"
+      Vi: "Vietnamese"
+      author: "Nguyen Xuan Tuan & Le Tien Thanh"
+      password: "Password"
+  user:
+    indext:
+      All_users: "All users"
+    new:
+      sign_up: "Sign Up"
+      enter_email: "Enter your Email"
+      enter_username: "Enter your Username"
+      enter_password: "Enter your Password"
+      confirm: "Confirm your Password"
+      create: "Register"
+      login: "Login"
+      olduser: "There are already accounts"
+    show:
+      welcome: "Goodluck!"
   session:
     new:
-      log_in: "log in"
-      login_Form: "login Form"
-      Admin_Login: "Admin Login"
-      Please: "Please enter your user name and password"
-      Forgot_password?: "Forgot password ?"
-      Designed_by: "Designed by XUAN TUAN & TIEN THANH"
+      login: "Log in"
+      form: "Login Form"
+      admin: "Admin Login"
+      user: "Users"
       password: "Password"
+      forgot: "Forgot password ?"
       newuser: "New user?"
-      language: " Language :"
+      signup: "Signup"
     user:
       Confirm_your_Password: "Confirm your Password"
       Enter_your_Password: "Enter your Password"
@@ -41,4 +61,44 @@ en:
       Login: "Login"
     create:
       invalid: "invalid"
+    shared:
+      error_message: "Error Message"
+      err: "error"
+    exam:
+      create_show:
+        Create_Exams: "Create Exams"
+        Test_Name: "Test Name"
+        Test_code: "Test code"
+        Examination: "Examination"
+        Work_Time: "Work Time (minutes)"
+        Exam_invigilator: "Exam invigilator"
+        Select_Supervisor: "Select Supervisor"
+        More_information: "More information"
+        Clear: "Clear"
+        Create: "Create"
+      filter_show:
+        Filter_Test: "Filter Test"
+        Located_In_Between: "Located In Between"
+        Test_code: "Test code"
+        Examination: "Examination"
+        Examination_Status: "Examination Status"
+        pending: "pending"
+        happening: "happening"
+        success: "success"
+        Exam_invigilator: "Exam invigilator"
+        Select_Supervisor: "Select Supervisor"
+        Delete_Filter: "Delete Filter"
+        Filter: "Filter"
+        Exam_List: "Exam List"
+        STT: "STT"
+        Exam_code: "Exam code"
+        Name_of_exam: "Name of exam"
+        Contest: "Contest"
+        Status: "Status"
+        Exam_time: "Exam time"
+        Update: "Update"
+        Test_Name: "Test Name"
+        Examination: "Examination"
+      infor_show:
+      task:
 

@@ -1,0 +1,194 @@
+<div class="portlet box blue">
+  <div class="portlet-title">
+    <div class="caption">
+      <i class="fa fa-filter"></i><%= t ".Filter_Test" %> </div>
+      <div class="tools">
+        <a href="javascript:;" class="collapse" data-original-title="" title=""> <i class="fa fa-arrow-circle-up  "></i></a>
+      </div>
+  </div>
+  <div class="portlet-body form">
+      <!-- BEGIN FORM-->
+      <form action="#" class="horizontal-form">
+        <div class="form-body">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label class="control-label"><%= t ".Located_In_Between" %></label>
+                <div class="input-group" id="defaultrange">
+                  <input type="text" class="form-control">
+                  <span class="input-group-btn">
+                    <button class="btn default date-range-toggle" type="button">
+                      <i class="fa fa-calendar"></i>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!--/span-->
+            <div class="col-md-4">
+              <div class="form-group">
+                <label class="control-label"><%= t ".Test_code" %></label>
+                <input type="text" id="firstName" class="form-control" placeholder="<%= t ".Test_code" %>">
+              </div>
+            </div>
+            <!--/span-->
+            <div class="col-md-4">
+              <div class="form-group">
+                <label class="control-label"><%= t ".Test_Name" %></label>
+                <select id="select2-single-input-sm" class="form-control input-sm select2-multiple select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                  <%
+                    if @list_exam.present?
+                    @list_exam.each do |exam|
+                  %>
+                  <option value="<%= exam.id.to_s %>"><%= exam.name %></option>
+                  <%
+                    end
+                  %>
+                </select>
+              </div>
+            </div>
+            <!--/span-->
+          </div>
+          <!--/row-->
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label class="control-label"><%= t ".Examination" %></label>
+                <select id="select2-single-input-sm" class="form-control input-sm select2-multiple select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                  <% @list_subject.each do |sb| %>
+                  <option value="<%= sb.id.to_s %>"><%= sb.name %></option>
+                  <% end %>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label class="control-label"><%= t ".Examination_Status" %></label>
+                <select id="select2-single-input-sm" class="form-control input-sm select2-multiple select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+
+                  <option value="pending"><%= t ".pending" %></option>
+                  <option value="happening"><%= t ".happening" %></option>
+                  <option value="success"><%= t ".success" %></option>
+
+                </select>
+              </div>
+            </div>
+            <!--/span-->
+            <div class="col-md-4">
+              <div class="form-group">
+                <label class="control-label"><%= t ".Exam_invigilator" %></label>
+                <select id="select2-multiple-input-lg" class="form-control input-lg select2-multiple select2-hidden-accessible" multiple="" tabindex="-1" aria-hidden="true" data-placeholder="<%= t ".Select_Supervisor" %>">
+                  <% @list_user.each do |lu| %>
+                  <option value="<%= lu[1].to_s %>"><%= lu[0] %></option>
+                  <% end %>
+                </select>
+
+              </div>
+            </div>
+            <!--/span-->
+          </div>
+          <!--/row-->
+          <div class="form-actions right">
+            <button type="button" class="btn btn-warning"><%= t ".Delete_Filter" %></button>
+            <button type="button" class="btn btn-danger"><%= t ".Filter" %></button>
+          </div>
+        </div>
+      </form>
+        <!-- END FORM-->
+  </div>
+</div>
+
+<div class="portlet box red-mint">
+  <div class="portlet-title">
+    <div class="caption">
+      <i class="fa fa-bell-o"></i><%= t ".Exam_List" %>
+    </div>
+    <div class="tools">
+      <a href="javascript:;" class="collapse" data-original-title="" title="">
+      <i class="fa fa-arrow-circle-up "></i></a>
+    </div>
+  </div>
+  <div class="portlet-body">
+    <div class="table-scrollable">
+      <table class="table table-striped table-bordered table-advance table-hover" style="table-layout:fixed">
+        <thead>
+          <tr>
+            <th width="4%">
+              <%= t ".STT" %>
+            </th>
+            <th width="8%">
+              <%= t ".Exam_code" %>
+            </th>
+            <th class="hidden-xs" width="20%">
+              <%= t ".Name_of_exam" %>
+            </th>
+            <th width="20%">
+              <%= t ".Contest" %>
+            </th>
+            <th width="8%">
+              <%= t ".Status" %>
+            </th>
+            <th width="15%">
+              <%= t ".Exam_time" %>
+            </th>
+            <th width="7%"> </th>
+          </tr>
+        </thead>
+        <tbody>
+          <%
+            if @list_exam.present?
+            @list_exam.each do |le|
+          %>
+          <tr>
+            <td>
+
+            </td>
+            <td>
+              <%= le.code %>
+            </td>
+            <td class="highlight" style="word-wrap:break-word">
+              <%= le.name %>
+            </td>
+            <td class="hidden-xs" style="word-wrap:break-word">
+              <%= le.subject.name %>
+            </td>
+            <td style="word-wrap:break-word">
+              <% if le.status == "success" %>
+              <span class="badge badge-success">
+                <%= le.status %>
+              </span>
+              <% elsif le.status == "pending" %>
+              <span class="badge badge-danger">
+                <%= le.status %>
+              </span>
+              <% else  %>
+              <span class="badge badge-warning">
+                <%= le.status %>
+              </span>
+              <% end %>
+            </td>
+            <td>
+              <%= le.time_begin.localtime("+07:00").to_s if le.time_begin.present? %>
+            </td>
+
+            <td>
+              <a href="/exam/<%= le.id.to_s %>/info_show" target="_blank" class="btn btn-outline btn-circle green btn-sm purple">
+                <i class="fa fa-edit"></i> <%= t ".Detail" %>
+              </a>
+            </td>
+          </tr>
+          <%
+            end
+          end
+          %>
+        </tbody>
+      </table>
+
+    </div>
+    <div class="row">
+      <div class="col-md-7 col-sm-7">
+
+      </div>
+    </div>
+  </div>
+</div>

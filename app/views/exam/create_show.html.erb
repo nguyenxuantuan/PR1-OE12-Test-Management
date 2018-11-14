@@ -1,0 +1,78 @@
+<div class="portlet box green-steel">
+  <div class="portlet-title">
+    <div class="caption">
+      <i class="fa fa-plus-square"></i> <%= t ".Create_Exams" %>
+    </div>
+    <div class="tools">
+      <a href="javascript:;" class="collapse" data-original-title="" title="">
+      <i class="fa fa-arrow-circle-up  "></i>
+      </a>
+    </div>
+  </div>
+<div class="portlet-body form">
+<!-- BEGIN FORM-->
+<form action="/exam/create_exam" class="horizontal-form" method="post">
+  <div class="form-body">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="form-group">
+          <label class="control-label"><%= t ".Test_Name" %></label>
+          <input type="text" name="exam_name" class="form-control" placeholder="Tên Kỳ Thi">
+          </div>
+        </div>
+        <!--/span-->
+        <div class="col-md-4">
+          <div class="form-group">
+            <label class="control-label"><%= t ".Test_code" %></label>
+            <input type="text" name="exam_code" class="form-control" placeholder="Mã Kỳ Thi">
+          </div>
+        </div>
+        <!--/span-->
+        <div class="col-md-4">
+          <div class="form-group">
+            <label class="control-label"><%= t ".Examination" %></label>
+            <select name="subject_id" class="form-control input-sm select2-multiple select2-hidden-accessible" tabindex="-1" aria-hidden="true"><% @list_subject.each do |lst| %>
+              <option value="<%= lst.id.to_s %>"><%= lst.name %>
+              </option><% end %>
+            </select>
+          </div>
+        </div>
+        <!--/span-->
+      </div>
+      <!--/row-->
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form-group">
+            <label class="control-label"><%= t ".Work_Time" %></label>
+            <input type="text" name="period_for" class="form-control" placeholder="Thời Gian Làm Bài">
+            </div>
+          </div>
+        <!--/span-->
+        <div class="col-md-4">
+          <div class="form-group">
+            <label class="control-label"><%= t ".Exam_invigilator" %></label>
+            <select name="supervisor[]" class="form-control input-lg select2-multiple select2-hidden-accessible" multiple="" tabindex="-1" aria-hidden="true" data-placeholder="<%= t ".Select_Supervisor" %>"><% @list_user.each do |lst| %>
+              <option value="<%= lst[1].to_s %>"><%= lst[0] %>
+              </option><% end %>
+            </select>
+          </div>
+        </div>
+        <!--/span-->
+        <div class="col-md-4">
+          <div class="form-group">
+            <label class="control-label"><<%= t ".More_information" %>/label>
+            <textarea class="form-control" rows="3" placeholder="Thông Tin Thêm" name="extra_info"></textarea>
+          </div>
+        </div>
+        <!--/span-->
+      </div>
+        <!--/row-->
+        <div class="form-actions right">
+          <button type="button" class="btn btn-danger"><%= t ".Clear" %></button>
+          <input type="submit" class="btn btn btn-primary" value="<%= t ".Create" %>"></input>
+        </div>
+      </div>
+    </form>
+    <!-- END FORM-->
+  </div>
+</div>

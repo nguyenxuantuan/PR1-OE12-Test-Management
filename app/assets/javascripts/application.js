@@ -1,5 +1,9 @@
+//= require exam/info_show.js
 //= require rails-ujs
 //= require turbolinks
 //= require jquery-3.3.1
 //= require bootstrap
 //= require_tree .
+//= require i18n
+//= require i18n.js
+//= require i18n/translations

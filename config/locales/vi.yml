@@ -1,17 +1,4 @@
 vi:
-  user:
-    new:
-      Register: "Đăng ký"
-      Confirm_your_Password: "Nhập lại mật khẩu của bạn"
-      Enter_your_Password: "Nhập mật khẩu của bạn"
-      Enter_your_Username: "Nhập tên tài khoản của bạn"
-      Enter_your_Email: "Nhập Email của bạn "
-      Student: "Sinh Viên"
-      Your_Email: "Email của bạn"
-      Username: "Tên tài khoản"
-      Password: "Mật khẩu"
-      Login: "Đăng nhập"
-      sign_up: "Đăng Ký"
   application_controller:
     Quiz_Test_Project: "Dự án bài kiểm tra"
   user_controller:
@@ -19,18 +6,49 @@ vi:
     registration_failed: "Đăng ký thất bại"
   layouts:
     application:
-      Quiz_Test_Project: "Dự án bài thi trắc nghiệm online"
+      Quiz_Test_Project: "Thi trắc nghiệm online"
+    header:
+      quiz: "Thi trắc nghiệm Online"
+      home: "Trang chủ"
+      help: "Trợ giúp"
+      login: "Đăng nhập"  
+      user: "Users"
+      log: "Đăng xuất"
+      account: "Tài khoản"
+      profile: "Hồ sơ"
+      setting: "Cài đặt"
+      about: "Thông tin"
+      contact: "Liên hệ"
+    footer:
+      Languages: "Ngôn ngữ"
+      En: "Tiếng Anh"
+      Vi: "Tiếng Việt"
+      designed: "Thiết kế bởi"
+      author: "Nguyễn Xuân Tuấn & Lê Tiến Thành"
+  user:
+    indext:
+      All_users: "Tất cả tài khoản người dùng"
+    new:
+      sign_up: "Đăng Ký"
+      enter_email: "Nhập Email của bạn"
+      enter_username: "Nhập tài khoản"
+      enter_password: "Nhập mật khẩu"
+      confirm: "Nhập lại mật khẩu"
+      create: "Đăng ký"
+      login: "Đăng nhập"
+      olduser: "Đã có tài khoản"
+    show:
+      welcome: "Chúc bạn thi tốt!"
   session:
     new:
-      log_in: "Đăng nhập"
-      login_Form: "form đăng nhập"
-      Admin_Login: "Quản trị viên đăng nhập"
-      Please: "Vui lòng nhập tên người dùng và mật khẩu của bạn "
-      Forgot_password?: "Quên mật khẩu ?"
-      Designed_by: "Thiết kế bởi XUÂN TUẤN & TIẾN THÀNH"
+      login: "Đăng nhập"
+      form: "Thông tin đăng nhập"
+      admin: "Quản trị viên đăng nhập"
+      user: "Tên đăng nhập"
       password: "Mật khẩu"
+      forgot: "Quên mật khẩu ?"
       newuser: "Người dùng mới?"
-      language: " Ngôn ngữ :"
+      signup: "Đăng Ký"
     user:
       Confirm_your_Password: "Nhập lại mật khẩu"
       Enter_your_Password: "Nhập mật khẩu"
@@ -43,3 +61,43 @@ vi:
       Login: "Đăng nhập"
     create:
       invalid: "invalid"
+    shared:
+      error_message: "Thông báo lỗi"
+      err: "lỗi"
+    exam:
+      create_show:
+        Create_Exams: "Create Exams"
+        Test_Name: "Test Name"
+        Test_code: "Test code"
+        Examination: "Examination"
+        Work_Time: "Work Time (minutes)"
+        Exam_invigilator: "Exam invigilator"
+        Select_Supervisor: "Select Supervisor"
+        More_information: "More information"
+        Clear: "Clear"
+        Create: "Create"
+      filter_show:
+        Filter_Test: "Filter Test"
+        Located_In_Between: "Located In Between"
+        Test_code: "Test code"
+        Examination: "Examination"
+        Examination_Status: "Examination Status"
+        pending: "pending"
+        happening: "happening"
+        success: "success"
+        Exam_invigilator: "Exam invigilator"
+        Select_Supervisor: "Select Supervisor"
+        Delete_Filter: "Delete Filter"
+        Filter: "Filter"
+        Exam_List: "Exam List"
+        STT: "STT"
+        Exam_code: "Exam code"
+        Name_of_exam: "Name of exam"
+        Contest: "Contest"
+        Status: "Status"
+        Exam_time: "Exam time"
+        Update: "Update"
+        Test_Name: "Test Name"
+        Examination: "Examination"
+      infor_show:
+      task:

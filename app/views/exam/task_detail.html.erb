@@ -1,0 +1,85 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Framgia Test</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="Preview page of Metronic Admin Theme #2 for color variants for metronic and bootstrap custom elements and components" name="description" />
+    <meta content="" name="author" />
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css" rel="stylesheet" type="text/css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="https://scontent.fhan5-6.fna.fbcdn.net/v/t1.15752-9/30713491_929703947197412_3897767127033053184_n.png?_nc_cat=0&oh=5c58ffafa709596f73607c9ff095b184&oe=5B27FEB5" />
+
+<body id="body_diff">
+  <div class=" active col-md-offset-1 col-md-10" id="tab_2">
+    <div class="portlet box green">
+      <div class="portlet-title">
+        <div class="caption">
+          Đề <%= @exam_thread_obj.code %>, Sinh viên: <%= @student_obj.name if @student_obj.present? %>
+        </div>
+      </div>
+      <div class="portlet-body form" style="background-color: #f7f7f7">
+                                                <!-- BEGIN FORM-->
+        <form action="#" class="form-horizontal">
+          <div class="form-body">
+          <%
+          i = 0
+          @exam_thread_obj.questions.each do |qu|
+          %>
+          <h3 class="form-section hrconfig"></h3>
+          <div class="row">
+            <div class="col-md-offset-1 col-md-10">
+              <div class="row">
+                <div class="col-md-2" style="font-weight: bold; font-size: 50px"><%= i=i+1 %>.</div>
+                  <div class="col-md-10" style="font-weight: bold;">
+                    <div class="row">
+                      <%= qu.question_bank.title %>
+                    </div>
+                    <div class="row">
+                      <br>
+                      <div class="col-md-offset-2 col-md-8">
+                        <% j=0 %>
+                        <% qu.question_bank.answer.each do |as| %>
+                          <div class="">
+                            <span
+                              <%= "style=color:#06ddf3;" if @student_obj.tasks.where(:question_bank_id => qu.question_bank.id).first.student_answer.include?(j) if @student_obj.tasks.where(:question_bank_id => qu.question_bank.id).first.present? %> > <%= ALPHABET[j] %>
+                            </span>. <%= as %>
+                          </div><br>
+                              <% j = j + 1 end %>
+                          </div>
+                      </div>
+                      <div class="row">
+                        Đáp án đúng:
+                          <% qu.question_bank.answer_true.each do |asw| %>
+                          <%= " #{ALPHABET[asw]}" %>
+                            <% end %>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <% end %>
+            </div>
+            <div class="form-actions">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-md-offset-3 col-md-9">
+                      <button type="submit" class="btn green">Submit</button>
+                      <button type="button" class="btn default">Cancel</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6"> </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    </body>
+  </html>
