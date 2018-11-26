@@ -1,2 +1,0 @@
-class UserExam < ApplicationRecord
-end

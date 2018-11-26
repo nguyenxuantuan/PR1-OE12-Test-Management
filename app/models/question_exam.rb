@@ -1,2 +1,0 @@
-class QuestionExam < ApplicationRecord
-end

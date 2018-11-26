@@ -10,13 +10,6 @@
 /test/version_tmp/
 /tmp/
 
-/config/master.key
-/config/database.yml
-/config/secrets.yml
-
-#ignore folder test
-/test/*
-
 # Used by dotenv library to load environment variables.
 # .env
 
